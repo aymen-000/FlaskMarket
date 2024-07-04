@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Home page
+{% endblock %}
+{% block content %}
+<div class="mx-auto">
+    <div class="d-flex justify-content-center align-items-center  bg-dark w-100 py-5 px-4 ">
+        <div class="text-center">
+            <h1>Jim Shapped Coding Market</h1>
+            <p>Start purchasing products by clicking the link bellow</p>
+            <div>
+                <a href="{{url_for('market_page')}}"><button class="btn btn-primary">Get Started</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

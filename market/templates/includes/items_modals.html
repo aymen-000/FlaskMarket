@@ -1,0 +1,77 @@
+<style>
+    .modal-content {
+        background-color: #212121;
+    }
+</style>
+<!-- Modal -->
+<div class="modal fade " id="Mymodal-{{ item.id }}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{item.name}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{ item.description }}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Purchass Modal-->
+<div class="modal fade " id="Mymodal2-{{ item.id }}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{item.name}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    {{PurchassForm.hidden_tag()}}
+                    <h4 class="text-center">
+                        Are you sure you want to buy {{item.nam}} for {{item.price}} ? 
+                    </h4>
+                    <h6 class="text-center">
+                        By clicking Purchass , you will purchass this item 
+                    </h6>
+                    <input id="purchass" name="purchass" type="hidden" value="{{item.name}}">
+                    {{PurchassForm.submit(class="btn btn-outline-success  d-block w-100")}}
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--sell Modal-->
+<div class="modal fade " id="Mymodal3-{{ item.id }}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{item.name}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    {{sell.hidden_tag()}}
+                    <h4 class="text-center">
+                        Are you sure you want to sell {{item.nam}} for {{item.price}} ? 
+                    </h4>
+                    <h6 class="text-center">
+                        By clicking Purchass , you will purchass this item 
+                    </h6>
+                    <input id="sell_item" name="sell_item" type="hidden" value="{{item.name}}">
+                    {{sell.submit(class="btn btn-outline-success  d-block w-100")}}
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
