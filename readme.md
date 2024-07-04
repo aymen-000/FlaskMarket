@@ -18,13 +18,13 @@ This is a simple web application built with Flask, Python, Bootstrap, and SQLite
 - SQLite
   
 ## user interface :
-![Project Screenshot](img/1.png)
+![Project Screenshot](https://github.com/aymen-000/FlaskMarket/blob/main/img/1.PNG)
 
-![Project Screenshot](img/2.png)
+![Project Screenshot](https://github.com/aymen-000/FlaskMarket/blob/main/img/2.PNG)
 
-![Project Screenshot](img/3.png)
+![Project Screenshot](https://github.com/aymen-000/FlaskMarket/blob/main/img/3.PNG)
 
-![Project Screenshot](img/4.png)
+![Project Screenshot](https://github.com/aymen-000/FlaskMarket/blob/main/img/4.PNG)
 
 ## Installation
 
