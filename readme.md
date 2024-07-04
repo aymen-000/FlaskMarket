@@ -38,6 +38,6 @@ This is a simple web application built with Flask, Python, Bootstrap, and SQLite
 
 ```bash
 git clone https://github.com/yourusername/small-project-store.git
-cd FLASKMARKET
-pip install -r requirements.txt
+cd FlaskMarket
+pip install -r requirement.txt
 python run.py
